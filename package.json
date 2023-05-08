@@ -4,7 +4,8 @@
   "description": "Bizning birinchi loyihamiz",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon sever.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "train": "nodemon train.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
