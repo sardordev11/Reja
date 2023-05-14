@@ -26,9 +26,26 @@ mongodb.connect(
         `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
         );
 
+<<<<<<< HEAD
       }); 
     }
   }
 );
 
+=======
+// 4 Routing code
+app.post("/create-item", (req, res) => {
+    console.log(req.body);
+    res.json({ test: "success" });
+});
+
+app.get("/", function (req, res) {
+        res.render("harid");
+});    
+    
+const server = http.createServer(app);
+let PORT = 3000;
+server.listen(PORT, function () {
+    console.log(`The server is running successfully on port: ${PORT}`);
+>>>>>>> master
 
